@@ -1,0 +1,22 @@
+docker network create mynetwork
+
+docker run -itd -v mysqlvolume123:/var/lib/mysql  -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=ironman1 -e MYSQL_USER=userironman1 -e MYSQL_PASSWORD=password --name mysqlcontainer7890 --network mynetwork --network-alias ironmanmysql123 mysql:8
+
+
+
+service php7.4-fpm start (inside container
+
+
+
+
+
+
+
+
+
+docker run -itd -v 1mysqlvolume123:/var/lib/mysql  -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=ironman1 -e MYSQL_USER=userironman1 -e MYSQL_PASSWORD=password --name mysqlcontainer7890 --network mynetwork --network-alias ironmanmysql123 mysql:8
+
+
+docker run -itd -p 8011:80 -v /home/user/scripts/nginxconf:/etc/nginx/sites-enabled/ --name 012qwertycontainer  --network mynetwork  --network-alias workmynetwork kiranl
+
+)https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Nginx-PHP-FPM-config-example
